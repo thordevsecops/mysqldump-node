@@ -1,0 +1,48 @@
+{
+  "name": "mysqldump-rds",
+  "version": "alpha-0.0.1",
+  "description": "Backup RDS Schemas and seding upload to S3 Bucket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MySQL",
+    "mariadb",
+    "mysqldump",
+    "mariadb-database",
+    "mariadb-mysql",
+    "mariadb-server",
+    "mysqldump-backup",
+    "rds-mysql",
+    "s3",
+    "backup"
+  ],
+  "homepage": "https://github.com/thordevsecops",
+  "bugs": "https://github.com/thordevsecops/mysqldump-rds/issues",
+  "author": "Thor Rachaus <thordevsecops@gmail.com>",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thordevsecops/mysqldump-rds"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "bluebird": "^3.7.2",
+    "dotenv": "^16.0.3",
+    "express-promise-router": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "mariadb": "^3.0.2",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "mysql2-promise": "^0.1.4",
+    "mysqldump": "^3.2.0",
+    "mysqldump-rds": "^3.1.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "s3": "^2.0.0",
+    "util": "^0.12.5",
+    "zlib": "^1.0.5"
+  }
+}
