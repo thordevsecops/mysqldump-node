@@ -8,13 +8,11 @@ const { createReadStream, createWriteStream } = require("fs");
 const { createGzip } = require("zlib");
 const spawn = require('child_process').spawn;
 const path = require('path');
-const fs = require('fs');
 const os = require('os');
 const Promise = require('bluebird');
 const router = require('express-promise-router')
 const util = require('util');
 const moment = require('moment');
-const zlib = require('zlib');
 
 // Obtain all schemas present in the RDS Server and backup them
 (async ()=>{
@@ -27,7 +25,7 @@ const zlib = require('zlib');
 
     for (i = 0; i < databases.length; i++) {
         databaseName = databases[i].Database;
-         if (databaseName == 'database'){
+         if (databaseName == 'agoracia'){
             response = await execDump.basedump(databaseName);
             console.log(response)
             let filePath = './' + databaseName + '.sql';
